@@ -1,0 +1,11 @@
+node_modules
+.DS_store
+.idea
+dist
+build
+releases
+.tmp
+.env
+key.ts
+# This project uses `pnpm` for package management
+package-lock.json
