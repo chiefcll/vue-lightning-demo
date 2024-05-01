@@ -17,6 +17,8 @@
 
   const handleRight = handleNavigation('right');
   const handleLeft = handleNavigation('left');
+  const handleUp = handleNavigation('up');
+  const handleDown = handleNavigation('down');
 
   const Thumbnail = {
     borderRadius: 16,
@@ -46,7 +48,7 @@
     <node :style="{width: 1920, height: 1080}">
       <node src="./assets/vue.png" :width="200" :height="200" :x="30" :y="20" />
       <ContentBlock :y="250" :x="150" title="Dune: Part 2" :description="DuneDescription" />
-      <node ref="column" :x="150" :y="450" :width="1920" :height="1080" display="flex" flexDirection="column">
+      <node ref="column" :onUp="handleUp" :onDown="handleDown" :x="150" :y="450" :width="1920" :height="1080" display="flex" flexDirection="column">
         <node v-for="row in rows" :onRight="handleRight" :onLeft="handleLeft" display="flex" justifyContent="spaceBetween" :width="1620" :height="300">
           <node v-for="item in row" :style="Thumbnail" :src="item.src" />
         </node>
