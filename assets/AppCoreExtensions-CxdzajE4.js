@@ -1,0 +1,2 @@
+import{s,S as o}from"./CoreExtension-Bq9xfxgV.js";const t="/vue-lightning-demo/";class a extends s{async run(n){n.fontManager.addFontFace(new o("Ubuntu",{weight:700},"msdf",n,t+"fonts/Ubuntu-Bold.msdf.png",t+"fonts/Ubuntu-Bold.msdf.json")),n.fontManager.addFontFace(new o("Ubuntu",{weight:400},"msdf",n,t+"fonts/Ubuntu-Regular.msdf.png",t+"fonts/Ubuntu-Regular.msdf.json"))}}export{a as default};
+//# sourceMappingURL=AppCoreExtensions-CxdzajE4.js.map
